@@ -1,0 +1,18 @@
+## all of these files, though renamed for NO2 and PM25, are the 'model level' output for CAMS for the years 2003-2022. These cdo commands create a day-mean average.
+
+
+# For NO2
+# in /data0/shr/bne/data/raw/nox/cams/
+
+cdo daymean cams_ml.nc cams_daymean.nc
+
+#For PM2.5
+# in /data0/shr/bne/data/raw/pm25/cams/
+
+cdo daymean cams_pm25_2003_2022.nc cams_pm25_daymean_2003_2022.nc
+
+
+#For O3
+#in /data0/shr/bne/data/raw/o3/cams/cams_o3_2003_2022/levtype_ml.nc'
+
+cdo daymean levtype_ml.nc cams_o3_daymean_2003_2022.nc
